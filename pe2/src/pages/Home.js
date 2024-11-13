@@ -7,8 +7,8 @@ const Home = () => {
     <div className="hero">
       <img src={heroImage} alt="A descriptive alt text for SEO" className="hero-image" />
       <div className="hero-content">
-        <h1>Your Hero Heading</h1>
-        <p>Your hero section description goes here.</p>
+        <h1>Trondheim City </h1>
+        <p>Your best memories in life starts here</p>
         <button className="hero-button">Get Started</button>
       </div>
     </div>
