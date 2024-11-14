@@ -1,0 +1,34 @@
+/* Footer.css */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .box1, .box2, .box3 {
+    flex: 1; /* Makes each box take up equal width */
+    min-width: 200px; /* Ensures boxes don’t get too small on narrow screens */
+}
+
+/* Additional styling for the social icons */
+.social-list {
+    list-style-type: none; /* Removes bullets */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Displays icons in a row */
+    gap: 30px; /* Adds spacing between icons */
+    justify-content: center; /* Centers the icons within the list */
+}
+
+.social-list li svg {
+    font-size: 24px; /* Adjusts the icon size */
+    color: white; /* Customize icon color */
+}
+  
+  
