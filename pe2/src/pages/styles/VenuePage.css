@@ -4,6 +4,7 @@
 .venue-page {
     padding: 20px;
     text-align: center;
+    background-color: #ffffff;
   }
   
   /* Container for all venues */
@@ -13,7 +14,6 @@
     gap: 20px;
     justify-content: center;
     padding: 20px;
-    background-color: white;
   }
   
   /* Individual venue card */
@@ -22,10 +22,16 @@
     border-radius: 8px;
     padding: 15px;
     width: 300px;
-    background-color: rgba(34, 19, 51, 1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #221333; /* Dark background for card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     text-align: center;
-    border: rgba(254, 0, 254, 1) 4px solid;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Add hover effect for venue card */
+  .venue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   }
   
   /* Venue image */
@@ -34,19 +40,49 @@
     height: 200px;
     object-fit: cover;
     border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
   }
   
   /* Venue title */
   .venue-card h2 {
     margin: 10px 0;
     font-size: 1.5rem;
-    color: rgba(253, 252, 253, 1);
+    color: #fdfcfd; /* White text for contrast */
   }
   
   /* Venue description */
   .venue-card p {
     margin: 5px 0;
     font-size: 1rem;
-    color: rgba(253, 252, 253, 1);
+    color: #fdfcfd;
   }
+  
+  /* Button for viewing venue details */
+  .view-venue-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007BFF; /* Primary button color */
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    text-transform: uppercase;
+  }
+  
+  /* Add hover and focus effect to the button */
+  .view-venue-button {
+    background-color: #FFA500;
+    color: #221333;
+  }
+
+  
+  
+  
+  
+  
+  
   

@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { fetchVenues } from '../api/venues'; // Import the API function
-import './styles/VenuePage.css'; // Add a CSS file for styling if needed
+import { useNavigate } from 'react-router-dom'; // For navigation
+import './styles/VenuePage.css';
 
 const VenuePage = () => {
-  const [venues, setVenues] = useState([]); // State to store venue data
+  const [venues, setVenues] = useState([]);
+  const navigate = useNavigate(); // Hook for navigation
 
   useEffect(() => {
     const getVenues = async () => {
@@ -18,6 +20,10 @@ const VenuePage = () => {
     getVenues();
   }, []);
 
+  const handleViewVenue = (id) => {
+    navigate(`/venue/${id}`); // Navigate to the specific venue page
+  };
+
   return (
     <div className="venue-page">
       <h1>All Venues</h1>
@@ -28,6 +34,9 @@ const VenuePage = () => {
             <h2>{venue.name}</h2>
             <p>{venue.description}</p>
             <p><strong>City:</strong> {venue.location.city}</p>
+            <button onClick={() => handleViewVenue(venue.id)} className="view-venue-button">
+              View Details
+            </button>
           </div>
         ))}
       </div>
@@ -36,4 +45,5 @@ const VenuePage = () => {
 };
 
 export default VenuePage;
+
 

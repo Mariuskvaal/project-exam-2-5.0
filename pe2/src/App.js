@@ -16,14 +16,16 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/venue-specific" element={<VenuPageSpecific />} />
         <Route path="/venue" element={<VenuPage />} />
-        <Route path="/Contact" element={<Contact />} />
+        {/* Dynamic route for specific venue by ID */}
+        <Route path="/venue/:id" element={<VenuPageSpecific />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
 
 
