@@ -9,6 +9,14 @@
     color: white;
     text-align: center;
   }
+
+  .header{
+    background: rgba(223, 51, 17, 1);
+  }
+
+  .nav ul{
+    color: rgba(34, 19, 51, 1);
+  }
   
   .hero-image {
     width: 100%;
@@ -56,6 +64,7 @@
   .h1-main-section{
     display: flex;
     justify-content: center;
+    background-color: DF3311;
   }
 
   .main-section, .main-section2 {
@@ -108,6 +117,29 @@
       display: flex;
       justify-content: center;
     }
+
+
+    /* Venues container */
+.venues-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: rgba(223, 51, 17, 1);
+}
+
+/* Individual venue card */
+.venue-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
     
   
   
