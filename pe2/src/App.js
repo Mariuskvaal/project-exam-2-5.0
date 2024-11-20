@@ -12,18 +12,15 @@ import ProfilePage from './pages/ProfilePage'; // Ensure ProfilePage is imported
 
 function App() {
   useEffect(() => {
-    // Create the API key when the app loads
-    const initializeApiKey = async () => {
-      try {
-        const apiKey = await createApiKey();
-        console.log('API Key created and stored:', apiKey);
-      } catch (error) {
-        console.error('Error creating API key:', error.message);
-      }
+    const initializeApiKey = () => {
+      const apiKey = '64bacf3c-53b7-43bf-9260-ccec3e99b027'; // Your static API key
+      localStorage.setItem('apiKey', apiKey);
+      console.log('Static API Key stored:', apiKey);
     };
-
+  
     initializeApiKey();
   }, []);
+  
 
   return (
     <Router>

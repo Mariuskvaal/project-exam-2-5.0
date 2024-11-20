@@ -1,34 +1,93 @@
 .profile-page {
-    max-width: 800px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .profile-page h2 {
-    text-align: center;
-    color: #333;
-  }
-  
-  .profile-details {
-    margin-top: 20px;
-  }
-  
-  .profile-avatar,
-  .profile-banner {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin-top: 10px;
-  }
-  
-  .error-message,
-  .loading-message {
-    text-align: center;
-    font-size: 16px;
-    color: red;
-  }
-  
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-page h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.profile-details {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  text-align: left;
+}
+
+.profile-details p {
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.profile-avatar-section,
+.profile-banner-section {
+  margin-top: 20px;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+}
+
+.profile-banner {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.logout-button {
+  display: block;
+  margin: 30px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #f44336;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.error-message {
+  color: #f44336;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.loading-message {
+  color: #666;
+  font-size: 18px;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+.profile-avatar-section p,
+.profile-banner-section p {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
